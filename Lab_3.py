@@ -23,7 +23,7 @@ GPIO.setup(Five, GPIO.OUT) #5th LED
 GPIO.setup(Six, GPIO.OUT) #6th LED
 GPIO.setup(Seven, GPIO.OUT) #7th LED
 GPIO.setup(Eight, GPIO.OUT) #8th LED
-GPIO.setup(Button, GPIO.IN, pull_up_down=GPIP.PUD_DOWN)
+GPIO.setup(Button, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 
 count = 0
 try:
