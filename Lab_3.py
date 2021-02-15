@@ -26,7 +26,7 @@ GPIO.setup(Eight, GPIO.OUT) #8th LED
 GPIO.setup(Button, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 print("setup complete")
 
-GPIO.output(one, GPIO.HIGH)
+GPIO.output(One, GPIO.HIGH)
 
 count = 0
 try:
