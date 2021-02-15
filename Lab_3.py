@@ -2,7 +2,7 @@ import RPi.GPIO as GPIO
 import time
 
 #Set board mode for gpio pins
-GPIO.setmode(GPIO.BCM)
+GPIO.setmode(GPIO.BOARD)
 
 One = 14
 Two = 15
