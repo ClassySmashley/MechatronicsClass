@@ -26,9 +26,12 @@ GPIO.setup(Eight, GPIO.OUT) #8th LED
 GPIO.setup(Button, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 print("setup complete")
 
+GPIO.output(one, GPIO.HIGH)
+
 count = 0
 try:
   while 1: 
+    print("waiting")
     if GPIO.input(Button): #Button press
       print("press")
       count = count + 1 #increase count
