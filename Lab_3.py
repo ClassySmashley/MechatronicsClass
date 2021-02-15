@@ -51,16 +51,17 @@ while 1:
   if GPIO.input(Button): #Button press
     count = count + 1 #increase count
     GPIO.output(Eight, GPIO.HIGH) #Turn on LED
-  if count == 8 AND GPIO.input(Button): #turn off all LEDs
-    count = 0
-    GPIO.output(One, GPIO.LOW)
-    GPIO.output(Two, GPIO.LOW)
-    GPIO.output(Three, GPIO.LOW)
-    GPIO.output(Four, GPIO.LOW)
-    GPIO.output(Five, GPIO.LOW)
-    GPIO.output(Six, GPIO.LOW)
-    GPIO.output(Seven, GPIO.LOW)
-    GPIO.output(Eight, GPIO.LOW)
+  if count == 8:
+    if GPIO.input(Button): #turn off all LEDs
+      count = 0
+      GPIO.output(One, GPIO.LOW)
+      GPIO.output(Two, GPIO.LOW)
+      GPIO.output(Three, GPIO.LOW)
+      GPIO.output(Four, GPIO.LOW)
+      GPIO.output(Five, GPIO.LOW)
+      GPIO.output(Six, GPIO.LOW)
+      GPIO.output(Seven, GPIO.LOW)
+      GPIO.output(Eight, GPIO.LOW)
 except KeyboardInterupt: #ctrl + C ends loop
   GPIO.cleanup()
     
