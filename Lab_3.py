@@ -28,7 +28,7 @@ println("setup complete")
 
 count = 0
 try:
-  while 1:
+  while 1: 
     if GPIO.input(Button): #Button press
       println("press")
       count = count + 1 #increase count
