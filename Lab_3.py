@@ -51,7 +51,7 @@ while 1:
   if GPIO.input(Button): #Button press
     count = count + 1 #increase count
     GPIO.output(Eight, GPIO.HIGH) #Turn on LED
-  if count = 8 && GPIO.input(Button): #turn off all LEDs
+  if (count = 8) && (GPIO.input(Button)): #turn off all LEDs
     count = 0
     GPIO.output(One, GPIO.LOW)
     GPIO.output(Two, GPIO.LOW)
