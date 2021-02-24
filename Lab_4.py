@@ -7,7 +7,7 @@ GPIO.setmode(GPIO.BCM)
 # LED on test
 R1 = 17
 
-GPIO.setmode(R1, GPIO.OUT)
+GPIO.setup(R1, GPIO.OUT)
 
 try:
   while 1:
