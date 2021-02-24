@@ -11,7 +11,7 @@ R3 = 27
 G = 22
 Y1 = 5
 Y2 = 6
-y3 = 13
+Y3 = 13
 #Set difficulty
 easy = 0.5
 normal = 0.25
