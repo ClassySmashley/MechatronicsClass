@@ -25,7 +25,7 @@ GPIO.setup(G, GPIO.OUT)
 GPIO.setup(Y1, GPIO.OUT)
 GPIO.setup(Y2, GPIO.OUT)
 GPIO.setup(Y3, GPIO.OUT)
-GPIO.add_event_detect(19, GPIO_RISING)
+GPIO.add_event_detect(19, GPIO.RISING)
 
 try:
   while 1:
