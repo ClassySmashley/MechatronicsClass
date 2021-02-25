@@ -50,7 +50,7 @@ try:
     GPIO.output(Y3, GPIO.HIGH)
     time.sleep(diff)
     GPIO.output(Y3, GPIO.LOW)
-    if GPIO.event_detected(19)
+    if GPIO.event_detected(19):
       break
     
 except KeyboardInterrupt:
