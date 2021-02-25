@@ -25,6 +25,7 @@ GPIO.setup(G, GPIO.OUT)
 GPIO.setup(Y1, GPIO.OUT)
 GPIO.setup(Y2, GPIO.OUT)
 GPIO.setup(Y3, GPIO.OUT)
+GPIO.add_event_detect(19, GPIO_RISING)
 
 try:
   while 1:
@@ -49,6 +50,8 @@ try:
     GPIO.output(Y3, GPIO.HIGH)
     time.sleep(diff)
     GPIO.output(Y3, GPIO.LOW)
+    if GPIO.event_detected(19)
+      break
     
 except KeyboardInterrupt:
   GPIO.cleanup()
