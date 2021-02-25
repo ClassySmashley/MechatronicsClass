@@ -16,7 +16,7 @@ Y3 = 13
 easy = 0.5
 normal = 0.25
 hard = 0.1
-diff = easy
+diff = hard
 
 GPIO.setup(R1, GPIO.OUT)
 GPIO.setup(R2, GPIO.OUT)
