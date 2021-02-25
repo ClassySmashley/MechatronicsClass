@@ -33,37 +33,37 @@ try:
     GPIO.output(R1, GPIO.HIGH)
     time.sleep(diff)
     if GPIO.input(19, HIGH):
-      time sleep(5)
+      time.sleep(5)
     GPIO.output(R1, GPIO.LOW)
     GPIO.output(R2, GPIO.HIGH)
     time.sleep(diff)
     if GPIO.input(19, HIGH):
-      time sleep(5)
+      time.sleep(5)
     GPIO.output(R2, GPIO.LOW)
     GPIO.output(R3, GPIO.HIGH)
     time.sleep(diff)
     if GPIO.input(19, HIGH):
-      time sleep(5)
+      time.sleep(5)
     GPIO.output(R3, GPIO.LOW)
     GPIO.output(G, GPIO.HIGH)
     time.sleep(diff)
     if GPIO.input(19, HIGH):
-      time sleep(5)
+      time.sleep(5)
     GPIO.output(G, GPIO.LOW)
     GPIO.output(Y1, GPIO.HIGH)
     time.sleep(diff)
     if GPIO.input(19, HIGH):
-      time sleep(5)
+      time.sleep(5)
     GPIO.output(Y1, GPIO.LOW)
     GPIO.output(Y2, GPIO.HIGH)
     time.sleep(diff)
     if GPIO.input(19, HIGH):
-      time sleep(5)
+      time.sleep(5)
     GPIO.output(Y2, GPIO.LOW)
     GPIO.output(Y3, GPIO.HIGH)
     time.sleep(diff)
     if GPIO.input(19, HIGH):
-      time sleep(5)
+      time.sleep(5)
     GPIO.output(Y3, GPIO.LOW)
     
     
