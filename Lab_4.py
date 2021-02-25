@@ -32,27 +32,40 @@ try:
   while 1:
     GPIO.output(R1, GPIO.HIGH)
     time.sleep(diff)
+    if GPIO.event_detected(19):
+      break
     GPIO.output(R1, GPIO.LOW)
     GPIO.output(R2, GPIO.HIGH)
     time.sleep(diff)
+    if GPIO.event_detected(19):
+      break
     GPIO.output(R2, GPIO.LOW)
     GPIO.output(R3, GPIO.HIGH)
     time.sleep(diff)
+    if GPIO.event_detected(19):
+      break
     GPIO.output(R3, GPIO.LOW)
     GPIO.output(G, GPIO.HIGH)
     time.sleep(diff)
+    if GPIO.event_detected(19):
+      break
     GPIO.output(G, GPIO.LOW)
     GPIO.output(Y1, GPIO.HIGH)
     time.sleep(diff)
+    if GPIO.event_detected(19):
+      break
     GPIO.output(Y1, GPIO.LOW)
     GPIO.output(Y2, GPIO.HIGH)
     time.sleep(diff)
+    if GPIO.event_detected(19):
+      break
     GPIO.output(Y2, GPIO.LOW)
     GPIO.output(Y3, GPIO.HIGH)
     time.sleep(diff)
-    GPIO.output(Y3, GPIO.LOW)
     if GPIO.event_detected(19):
       break
+    GPIO.output(Y3, GPIO.LOW)
+    
     
 except KeyboardInterrupt:
   GPIO.cleanup()
