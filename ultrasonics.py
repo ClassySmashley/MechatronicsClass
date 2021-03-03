@@ -6,28 +6,24 @@ import time
 GPIO.setmode(GPIO.BCM)
  
 #set GPIO Pins
-trig1 = 21
-trig2 = 12
-trig3 = 26
+trig = 26
 echo1 = 20
 echo2 = 16
 echo3 = 19
  
 #set GPIO direction (IN / OUT)
-GPIO.setup(trig1, GPIO.OUT)
-GPIO.setup(trig2, GPIO.OUT)
-GPIO.setup(trig3, GPIO.OUT)
+GPIO.setup(trig, GPIO.OUT)
 GPIO.setup(echo1, GPIO.IN)
 GPIO.setup(echo2, GPIO.IN)
 GPIO.setup(echo3, GPIO.IN)
  
 def distance1():
     # set Trigger to HIGH
-    GPIO.output(trig1, True)
+    GPIO.output(trig, True)
  
     # set Trigger after 0.01ms to LOW
     time.sleep(0.00001)
-    GPIO.output(trig1, False)
+    GPIO.output(trig, False)
  
     StartTime = time.time()
     StopTime = time.time()
@@ -50,11 +46,11 @@ def distance1():
  
 def distance2():
     # set Trigger to HIGH
-    GPIO.output(trig2, True)
+    GPIO.output(trig, True)
  
     # set Trigger after 0.01ms to LOW
     time.sleep(0.00001)
-    GPIO.output(trig2, False)
+    GPIO.output(trig, False)
  
     StartTime = time.time()
     StopTime = time.time()
@@ -77,11 +73,11 @@ def distance2():
  
 def distance3():
     # set Trigger to HIGH
-    GPIO.output(trig3, True)
+    GPIO.output(trig, True)
  
     # set Trigger after 0.01ms to LOW
     time.sleep(0.00001)
-    GPIO.output(trig3, False)
+    GPIO.output(trig, False)
  
     StartTime = time.time()
     StopTime = time.time()
